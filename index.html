@@ -8,22 +8,21 @@
       content="Jose Manuel Ortiz, speaker en transformación humana y sentido de vida. Conferencias y talleres para jóvenes, equipos y comunidades."
     />
     <title>Jose Manuel Ortiz | Speaker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
-    <header class="site-header">
+    <header class="site-header" id="top">
       <div class="container nav-wrapper">
         <a href="#inicio" class="brand">Jose Manuel Ortiz</a>
-        <nav aria-label="Navegación principal" class="main-nav">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+          Menú
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
           <ul>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#enfoque">Enfoque</a></li>
             <li><a href="#conferencias">Conferencias</a></li>
             <li><a href="#impacto">Impacto</a></li>
             <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -34,8 +33,8 @@
     </header>
 
     <main id="main-content">
-      <section id="inicio" class="hero section">
-        <div class="container hero-content">
+      <section id="inicio" class="section hero">
+        <div class="container">
           <p class="eyebrow">Speaker · Transformación humana · Sentido de vida</p>
           <h1>Del ruido interior a la claridad con sentido.</h1>
           <p class="lead">
@@ -43,7 +42,7 @@
             Ayudo a jóvenes, equipos y comunidades a ordenar su mundo interior, comprender su
             historia y tomar decisiones más libres y conscientes.
           </p>
-          <div class="hero-cta">
+          <div class="cta-group">
             <a class="btn btn-primary" href="#reservar">Reservar llamada de 5 minutos</a>
             <a class="btn btn-secondary" href="#conferencias">Ver conferencias</a>
           </div>
@@ -54,35 +53,36 @@
         <div class="container narrow">
           <h2>El problema que ayudo a resolver</h2>
           <p>
-            Muchas personas viven con saturación mental, presión externa y una sensación constante
-            de desconexión con su propósito. Esto afecta decisiones, relaciones y bienestar.
+            Muchas personas viven sobrecargadas emocionalmente, con ruido mental constante y presión
+            por cumplir expectativas externas. Esto bloquea decisiones importantes y debilita su
+            sentido de dirección.
           </p>
           <p>
-            Mis espacios están diseñados para transformar esa confusión en dirección práctica: más
-            claridad personal, conversaciones honestas y acciones coherentes con valores reales.
+            A través de conferencias y talleres, transformo esa confusión en claridad interior y
+            acción consciente para vivir con más propósito y libertad.
           </p>
         </div>
       </section>
 
-      <section id="enfoque" class="section section-muted">
+      <section id="enfoque" class="section section-soft">
         <div class="container">
-          <h2>Un enfoque integral: corazón, mente, visión y espíritu</h2>
-          <div class="grid-cards">
+          <h2>Enfoque: corazón, mente, visión y espíritu</h2>
+          <div class="grid cards-4">
             <article class="card">
               <h3>Corazón</h3>
-              <p>Sanar la historia personal para relacionarse mejor consigo mismo y con los demás.</p>
+              <p>Reconocer heridas, sanar vínculos y fortalecer la conexión con la propia historia.</p>
             </article>
             <article class="card">
               <h3>Mente</h3>
-              <p>Comprender patrones, creencias y emociones para responder con mayor lucidez.</p>
+              <p>Ordenar pensamientos, comprender creencias y elegir respuestas más conscientes.</p>
             </article>
             <article class="card">
               <h3>Visión</h3>
-              <p>Convertir inquietudes profundas en dirección, metas claras y sentido cotidiano.</p>
+              <p>Traducir inquietudes profundas en dirección, metas y decisiones con sentido.</p>
             </article>
             <article class="card">
               <h3>Espíritu</h3>
-              <p>Reconectar con lo esencial para vivir con propósito, presencia y esperanza.</p>
+              <p>Volver a lo esencial para vivir con propósito, presencia y esperanza práctica.</p>
             </article>
           </div>
         </div>
@@ -91,38 +91,38 @@
       <section id="conferencias" class="section">
         <div class="container">
           <h2>Conferencias y talleres</h2>
-          <div class="grid-cards">
+          <div class="grid cards-3">
             <article class="card">
               <h3>Del caos emocional a la claridad</h3>
-              <p>Para jóvenes y adultos que quieren gestionar emociones y recuperar enfoque.</p>
+              <p>Herramientas simples para entender emociones y decidir con mayor libertad.</p>
             </article>
             <article class="card">
               <h3>Historias que transforman</h3>
-              <p>Una experiencia para resignificar heridas y fortalecer identidad personal.</p>
+              <p>Espacio de reflexión para resignificar experiencias y recuperar dirección.</p>
             </article>
             <article class="card">
               <h3>Liderar desde adentro</h3>
-              <p>Para equipos que buscan cultura saludable, conversaciones valientes y propósito.</p>
+              <p>Para equipos y comunidades que quieren cultura sana y conversaciones honestas.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="impacto" class="section section-muted">
+      <section id="impacto" class="section section-soft">
         <div class="container">
           <h2>Impacto</h2>
-          <div class="metrics">
-            <article class="metric card">
+          <div class="grid cards-3">
+            <article class="card metric">
               <p class="metric-value">+120</p>
-              <p>Conferencias y talleres impartidos</p>
+              <p>Conferencias y talleres impartidos.</p>
             </article>
-            <article class="metric card">
+            <article class="card metric">
               <p class="metric-value">+15,000</p>
-              <p>Personas impactadas en distintos espacios</p>
+              <p>Personas impactadas en espacios educativos y comunitarios.</p>
             </article>
-            <article class="metric card">
+            <article class="card metric">
               <p class="metric-value">3 países</p>
-              <p>Participación en eventos educativos y corporativos</p>
+              <p>Participación en eventos presenciales y virtuales.</p>
             </article>
           </div>
         </div>
@@ -131,60 +131,56 @@
       <section id="testimonios" class="section">
         <div class="container">
           <h2>Testimonios</h2>
-          <div class="grid-cards">
+          <div class="grid cards-3">
             <blockquote class="card quote">
-              <p>
-                “La conferencia nos ayudó a nombrar lo que sentíamos y a tomar decisiones más
-                conscientes como equipo.”
-              </p>
-              <cite>— Coordinadora académica</cite>
+              <p>“Nos ayudó a entender nuestro momento y a convertirlo en acción concreta.”</p>
+              <cite>Coordinadora académica</cite>
             </blockquote>
             <blockquote class="card quote">
-              <p>
-                “Jose Manuel conecta con profundidad y sencillez. Su mensaje sigue resonando semanas
-                después.”
-              </p>
-              <cite>— Líder comunitario</cite>
+              <p>“Un mensaje profundo, cercano y útil para líderes y equipos.”</p>
+              <cite>Líder comunitario</cite>
             </blockquote>
             <blockquote class="card quote">
-              <p>
-                “No fue solo motivación: salimos con herramientas concretas para vivir con más
-                sentido.”
-              </p>
-              <cite>— Participante de taller</cite>
+              <p>“Salimos con más claridad personal y herramientas aplicables desde el primer día.”</p>
+              <cite>Participante de taller</cite>
             </blockquote>
           </div>
         </div>
       </section>
 
-      <section id="sobre-mi" class="section section-muted">
+      <section id="sobre-mi" class="section section-soft">
         <div class="container narrow">
           <h2>Sobre mí</h2>
           <p>
-            Soy Jose Manuel Ortiz, conferencista y facilitador en procesos de transformación
-            humana. Trabajo con una mirada cercana, profunda y práctica, integrando experiencia de
-            vida, herramientas formativas y reflexión espiritual.
+            Soy Jose Manuel Ortiz, speaker y facilitador en procesos de transformación humana.
+            Combino experiencia personal, herramientas formativas y reflexión profunda para generar
+            conversaciones que impulsan cambios reales.
           </p>
           <p>
-            Mi propósito es acompañar a personas y organizaciones a descubrir una forma más libre,
-            consciente y humana de vivir y liderar.
+            Mi trabajo está orientado a jóvenes, equipos y comunidades que quieren vivir, liderar y
+            decidir desde un lugar más libre, consciente y humano.
           </p>
         </div>
       </section>
 
-      <section id="reservar" class="section reserve">
-        <div class="container reserve-box">
+      <section id="reservar" class="section">
+        <div class="container callout">
           <div>
-            <h2>¿Quieres llevar esta conversación a tu comunidad o equipo?</h2>
-            <p>Agenda una llamada breve para revisar tu contexto y definir la mejor propuesta.</p>
+            <h2>Reservar llamada</h2>
+            <p>
+              Agenda una llamada breve de 5 minutos para revisar tu necesidad y definir la mejor
+              propuesta de conferencia o taller.
+            </p>
           </div>
-          <a class="btn btn-primary" href="mailto:contacto@josemanuelortiz.com?subject=Reserva%20de%20llamada">Reservar llamada de 5 minutos</a>
+          <a class="btn btn-primary" href="mailto:contacto@josemanuelortiz.com?subject=Reserva%20de%20llamada%20de%205%20minutos">
+            Reservar llamada de 5 minutos
+          </a>
         </div>
       </section>
     </main>
 
     <footer id="contacto" class="site-footer">
-      <div class="container footer-content">
+      <div class="container footer-grid">
         <div>
           <p class="footer-title">Jose Manuel Ortiz</p>
           <p>Speaker en transformación humana y sentido de vida.</p>
@@ -194,7 +190,7 @@
           <p><strong>Instagram:</strong> <a href="#" aria-label="Próximamente">@josemanuelortiz</a></p>
         </div>
       </div>
-      <p class="copyright">© <span id="year"></span> Jose Manuel Ortiz. Todos los derechos reservados.</p>
+      <p class="copyright">© <span id="year"></span> Jose Manuel Ortiz · Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
